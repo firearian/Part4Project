@@ -1,3 +1,6 @@
+body{
+    background-color: skyblue;
+}
 #mainmenu {
     position:absolute;
     top: 0.5%;
