@@ -35,7 +35,7 @@
     font-size: 20px;
 }
 
-table#Files {
+table {
     position: absolute;
     top: 10%;
     left: 3%;
@@ -43,9 +43,24 @@ table#Files {
     width: 90%;
 }
 
-table#Files td {
-    border: 2px solid lightblue;
+table,tr,td {
+    border: 2px solid black;
     color: white;
-    background-color: black;
+    background-color: darkblue;
     height: 10%;
 }
+
+table,#mew {
+    border: 1px solid white;
+    background-color: white;
+    height: 10%;
+}
+
+table,#mew td {
+    border: 1px solid white;
+    padding: 50px;
+    color: black;
+    background-color: white;
+    height: 10%;
+}
+
