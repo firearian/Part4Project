@@ -60,7 +60,7 @@ table#Files {
     position: absolute;
     top: 33%;
     left: 38%;
-    text-align: left;
+    text-align: center;
 }
 
 table#Files td {

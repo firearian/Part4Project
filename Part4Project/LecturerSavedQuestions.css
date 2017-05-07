@@ -39,11 +39,11 @@ table#Files {
     position: absolute;
     top: 33%;
     left: 38%;
-    text-align: left;
+    text-align: center;
 }
 
 table#Files td {
-    border: 2px solid lightblue;
+    border: 2px solid white;
     color: white;
     background-color: black;
     height: 30px;
