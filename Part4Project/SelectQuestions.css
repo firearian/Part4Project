@@ -1,9 +1,5 @@
-#bg {
-    position: absolute;
-    top:0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
+body{
+    background-color: skyblue;
 }
 
 #mainmenu {
@@ -38,42 +34,37 @@
 #TestName {
     position: absolute;
     top: 15%;
-    left: 38%;
+    left: 44.5%;
     text-align: center;
 }
 
 #TestTime {
     position: absolute;
     top: 20%;
-    left: 38%;
+    left: 44.5%;
     text-align: center;
 }
 
-#SaveTest {
+.container{
     position: absolute;
-    top: 75%;
-    left: 38%;
-    height: 15%;
+    left: 8%;
+    top: 30%;
 }
 
-table#Files {
-    position: absolute;
-    top: 33%;
-    left: 38%;
+table {
+    top: 10%;
+    left: 3%;
     text-align: center;
+    width: 90%;
 }
 
-table#Files td {
-    border: 2px solid lightblue;
+table,tr,td {
+    border: 2px solid black;
     color: white;
-    background-color: black;
-    height: 30px;
-    padding: 10px;
+    background-color: darkblue;
+    height: 10%;
 }
 
-#UoaLogo {
-    position: absolute;
-    top: 91.5%;
-    left: 0.5%; 
-    height: 8%;
+#confirm{
+    text-align: center;
 }

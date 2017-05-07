@@ -9,12 +9,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
   <link rel="stylesheet" href="SelectQuestions.css">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>    
 </head>
 
 <body>
    
-    <img id="bg" src="../Pictures/LoginBg.jpg" alt="bg"/>
-    
     <p id="LoggedInAs"> You are logged in as --------- </p>
 
     
@@ -23,27 +26,135 @@
     <input id="TestTime" type="text" placeholder="Total time in minutes" name="uname" required>    
     </form>    
         
-    <table id="Files">    
-      <tr>
-        <td><a href="/Topics/Magnets.html">Magnets</a></td>
-      </tr>
-      <tr>
-        <td>Ferro magnetic material</td>
-      </tr>
-      <tr>
-        <td>Safety</td>
-      </tr>
-      <tr>
-          <td><a href="/Topics/topic1.html"> topic1 </a></td>
-      </tr>
-      <tr>
-          <td><a href="/Topics/topic2.thml"> topic2</a></td>
-      </tr>     
-    </table>
+     <form action="#">  
+<!------------------- START OF TOPICS ------------------------>   
+ <div class="container">
+  <div class="panel-group" id="accordion">
+
+<!------------------- FIRST TOPIC --------------------------->      
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Topic 1</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+                <table> 
+
+                  <tr>
+                    <td>Q1</td>
+                    <td>Multi choice</td>
+                    <td>
+                    <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
+                    </td>
+                    <td><input type="checkbox" name="#" value="#"><br>Select </td>  
+                  </tr> 
+
+                  <tr>    
+                      <td>Q2</td>
+                      <td>Calculation</td>
+                      <td>     
+                        <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
+                      </td>            
+                      <td><input type="checkbox" name="#" value="#"><br>Select</td>  
+                  </tr>
+
+                  <tr>    
+                      <td>Q3</td>
+                      <td>Yes/No</td>
+                      <td>     
+                        <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
+                      </td>
+                      <td><input type="checkbox" name="#" value="#"><br>Select</td>        
+                  </tr>
+                </table>
+        </div>
+      </div>
+    </div>
+  <!------------------- SECOND TOPIC ------------------------> 
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Topic 2</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+               <table id="Files">    
+                  <tr>
+                    <td>Q1</td>
+                    <td>Multi choice</td>
+                    <td>
+                    <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
+                    </td>
+                      <td><input type="checkbox" name="#" value="#"><br>Select</td>  
+                  </tr> 
+              </table>
+        </div>
+      </div>
+    </div>
+ <!------------------- THIRD TOPIC ------------------------>   
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Topic 3</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
         
-        <a href="#">
-        <img id="SaveTest" src="/Pictures/SaveTest.png" alt="SaveTest"/>
-        </a>
+            <table id="Files">    
+              <tr>
+                <td>Q1</td>
+                <td>Multi choice</td>
+                <td>
+                <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
+                </td>
+                      <td><input type="checkbox" name="#" value="#"><br>Select</td>   
+              </tr> 
+
+              <tr>    
+              <td>Q2</td>
+              <td>Calculation</td>
+              <td>     
+                <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
+              </td>            
+                      <td><input type="checkbox" name="#" value="#"><br>Select</td>   
+              </tr>
+
+              <tr>    
+              <td>Q3</td>
+              <td>Yes/No</td>
+              <td>     
+                <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
+              </td>
+                      <td><input type="checkbox" name="#" value="#"><br>Select</td>         
+              </tr>
+
+              <tr>    
+              <td>Q4</td>
+              <td>Calculation</td>
+              <td>     
+                <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
+              </td>            
+                      <td><input type="checkbox" name="#" value="#"><br>Select</td>    
+              </tr>
+            </table>    
+        </div>
+      </div>
+    </div>
+<!------------------- END OF TOPICS ------------------------>   <!------------------- SUBMIT BUTTON ------------------------>   
+      <div class="panel-heading">
+          <div id=confirm>
+            <input type="submit" value="Confirm selected questions & save test">
+          </div>      
+      </div>
+
+  </div> 
+</div>
+<!------------------- END OF PANNEL ------------------------>      
+</form>
 
         <div id="dropdown">
             <img id="mainmenu" src="../Pictures/MenuIcon.png" alt="MenuIcon"/>
